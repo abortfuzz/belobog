@@ -1,0 +1,48 @@
+[package]
+name = "belobog-fork"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license-file.workspace = true
+readme.workspace = true
+description.workspace = true
+homepage.workspace = true
+repository.workspace = true
+
+[dependencies]
+clap = {workspace = true}
+reqwest = {workspace = true}
+sui-sdk = {workspace = true}
+color-eyre = {workspace = true}
+object_store = {workspace = true}
+log = {workspace = true}
+byteorder = {workspace = true}
+fastcrypto = {workspace = true}
+bcs = {workspace = true}
+tokio-stream = {workspace = true}
+itertools = {workspace = true}
+tokio = {workspace = true, features = ["full"]}
+mdbx-derive = {workspace = true}
+serde = {workspace = true}
+bincode = {workspace = true}
+prometheus = {workspace = true}
+cynic = {workspace = true}
+auto_impl = {workspace = true}
+serde_json = {workspace = true}
+
+move-binary-format = {workspace = true}
+move-trace-format = {workspace = true}
+move-core-types = {workspace = true}
+sui-config = { workspace = true }
+sui-storage = { workspace = true }
+sui-snapshot = {workspace = true}
+sui-core = {workspace = true}
+sui-replay-2 = {workspace = true}
+sui-execution = {workspace = true}
+sui-types = {workspace = true}
+
+belobog-types = {workspace = true}
+chrono = {workspace = true}
+rand = {workspace = true}
+[build-dependencies]
+cynic-codegen = { version = "3" }

@@ -1,0 +1,21 @@
+[package]
+name = "belobog-cli"
+version.workspace = true
+edition.workspace = true
+license-file.workspace = true
+readme.workspace = true
+description.workspace = true
+homepage.workspace = true
+repository.workspace = true
+
+[dependencies]
+color-eyre = {workspace = true}
+dotenvy = {workspace = true}
+log = {workspace = true}
+tokio = {workspace = true, features = ["full"]}
+env_logger = {workspace = true}
+clap = { workspace = true, features = ["env", "derive"] }
+
+belobog = {workspace = true}
+belobog-fork = {workspace = true}
+belobog-types = {workspace = true}
